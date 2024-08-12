@@ -8,7 +8,8 @@ const fullPageList = ["resume"];
 
 const Layout = () => {
   const location = useLocation();
-  const fullPage = fullPageList.filter((e) => location.pathname.includes(e));
+  const fullPage =
+    fullPageList.filter((e) => location.pathname.includes(e)).length === 1;
 
   useEffect(() => {
     const handleResize = () => {
