@@ -4,7 +4,7 @@ import { Paper } from "@mui/material";
 import zIndex from "@mui/material/styles/zIndex";
 import { styled } from "@mui/system";
 import { useState } from "react";
-import { MdMenu, MdClose } from "react-icons/md";
+import { MdClose } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
 const options = [
   {
