@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "../page/home";
 import Layout from "@components/layout";
+import ResumePage from "@pages/resume";
 
 const RootNavigation = () => {
   const router = createBrowserRouter([
@@ -11,6 +12,10 @@ const RootNavigation = () => {
         {
           index: true,
           element: <HomePage />,
+        },
+        {
+          path: "resume",
+          element: <ResumePage />,
         },
       ],
     },

@@ -1,10 +1,15 @@
 import { useEffect } from "react";
 import { Paper, styled } from "@mui/material";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "@components/header";
 import { BackgroundDecoration } from "styles/global";
 
+const fullPageList = ["resume"];
+
 const Layout = () => {
+  const location = useLocation();
+  const fullPage = fullPageList.filter((e) => location.pathname.includes(e));
+
   useEffect(() => {
     const handleResize = () => {
       document.documentElement.style.setProperty(
@@ -20,7 +25,16 @@ const Layout = () => {
   return (
     <LayoutContainer>
       <Header />
-      <MainContainer variant="outlined">
+      <MainContainer
+        variant="outlined"
+        style={
+          fullPage
+            ? {
+                padding: "0px",
+              }
+            : {}
+        }
+      >
         <InnerContainer>
           <BackgroundDecoration />
           <Outlet />

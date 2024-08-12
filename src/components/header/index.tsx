@@ -6,6 +6,7 @@ import { styled } from "@mui/system";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useLocation } from "react-router-dom";
 const options = [
   {
     route: "/",
@@ -26,10 +27,18 @@ const options = [
 ];
 
 const Header = () => {
+  const location = useLocation();
+  const hideHeader = location.pathname.includes("resume");
+
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <Container variant="outlined">
+    <Container
+      variant="outlined"
+      sx={{
+        transform: hideHeader ? "translateY(-100%)" : "translateY(0)",
+      }}
+    >
       <LogoContainer>
         <img src="/vite.svg" alt="logo" />
       </LogoContainer>
@@ -97,7 +106,7 @@ const Header = () => {
         sx={{
           // "&:hover": {
           ".MuiTypography-root": {
-            opacity: 0.3,
+            opacity: 0.7,
             transition: "all .2s",
           },
           // },
@@ -115,6 +124,7 @@ const Header = () => {
                 [`&#${id}:hover`]: {
                   ".MuiTypography-root": {
                     opacity: 1,
+                    color: "white",
                   },
                 },
               }}
