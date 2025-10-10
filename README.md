@@ -1,16 +1,22 @@
-## Hi there 👋
+# Hi, I’m Ebenezer 👋
 
-<!--
-**ebe-nezer/ebe-nezer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me  
+I’m a passionate Software Developer with experience building scalable, user-friendly web and mobile applications. I specialize in Typescript, React, React Native, and the MERN stack, with a keen eye for clean, maintainable code and intuitive user interfaces.
 
-Here are some ideas to get you started:
+## What I Do  
+- Develop responsive and performant UI with React and React Native  
+- Use TypeScript for safer, scalable codebases  
+- Focus on delivering high-quality features with strong collaboration across teams
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Skills
+
+- **Frontend Development:** React, React Native, TypeScript, Javascript
+- **Backend Development:** Node.js, Express.js, RESTful API
+- **Database Management:** MongoDB
+- **Version Control & Collaboration:** Git, GitHub
+- **Cloud Platforms:** AWS, GCP
+- **Build & Deployment Tools:** EAS, AWS Amplify, Vercel, Netlify
+- **UI/UX Design:** Responsive design, component-driven architecture, user experience optimization
+
+## Let’s Connect  
+- [LinkedIn](https://www.linkedin.com/in/ebenezer-j)  
